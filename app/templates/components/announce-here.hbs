@@ -1,0 +1,10 @@
+<li>
+  {{#if isNewsShowing}}
+    <h3>Special news: {{annoucements.text}}</h3>
+    <h4>Here's an offer: {{annoucements.offer}}</h4>
+    <h5>Save some money! {{annoucements.discount}}</h5>
+    {{action 'NewsShow'}}
+  {{else}}
+    <button {{action 'NewsShow'}}>Annoucement Show! Now!</button>
+  {{/if}}
+</li>

@@ -5,9 +5,10 @@ We hope you find exactly what you're looking for in a place to stay.
 <ul>
   {{#each model as |rental|}}
     {{rental-tile rental=rental destroyRental="destroyRental"}}
-    {{image-show image=image}}
   {{/each}}
 </ul>
+
+<h3>{{announce-here announcement=annoucement}}</h3>
 
 {{new-rental saveRental2="saveRental3"}}
 

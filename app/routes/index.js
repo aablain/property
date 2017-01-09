@@ -2,6 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
+    return Ember.RSVP.hash({
+    discount: this.store.findAll('discount'),
+    offer: this.store.findAll('offer'),
+    text: this.store.findAll('text')
+  });
+  }
+})
+
+export default Ember.Route.extend({
+  model() {
     return this.store.findAll('rental');
   },
 
