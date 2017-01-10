@@ -1,1 +1,11 @@
-{{outlet}}
+<h3>announcements</h3>
+
+<!-- <h3>{{announce-here announcement=annoucement}}</h3> -->
+
+<ul>
+  {{#each model as |announcement|}}
+    {{announce-here announcement=annoucement}}
+  {{/each}}
+</ul>
+
+{{#link-to 'index'}}Home{{/link-to}}

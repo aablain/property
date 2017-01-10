@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('deals');
   this.route('options');
   this.route('announcements');
+  this.route('rental', {path: '/rental/:rental_id'});
 });
 
 export default Router;

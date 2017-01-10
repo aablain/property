@@ -3,10 +3,10 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   isNewsShowing: false,
   actions: {
-    NewsShow: function(){
+    newsShow: function() {
       this.set('isNewsShowing', true);
     },
-    imageHide: function() {
+    newsHide: function() {
       this.set('isNewsShowing', false);
     }
   }
